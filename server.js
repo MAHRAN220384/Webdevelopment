@@ -157,5 +157,5 @@ app.put('/api/removeArticle', function (request, response) {
   console.log(res);
 }) */
 //console.log(doc);
-
-app.listen(3000, () => { console.log("App is Listening to 3000") })
+const port = process.env.PORT||3000;
+app.listen(port, () => { console.log("App is Listening to 3000") })
