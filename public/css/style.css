@@ -4,8 +4,9 @@ html * {
 
   }
   #pageheader {
-      padding: 1%;
-      background-color: #DDDDDD
+      padding: 1%; 
+      background-color: #DDDDDD 
+   
   
   }
   header nav {
@@ -54,22 +55,38 @@ html * {
 
     
     /* Main Content Area */
+
+    #content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
   
-#sideLeft {
+#sideLeft , #sideRight {
 
-
+background-color: transparent;
+    width: 20rem;
     
 }
+#filterbar {
+    background-color: aquamarine;
+    margin-bottom: 1rem;
+}
   #maincontent {
-  
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   width: 800px;
 
+/*
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(10%, 1fr));
+          grid-template-columns: repeat(auto-fill, minmax(400px, 800px));
           /* This is better for small screens, once min() is better supported */
           /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+/*    
           grid-gap: 1rem;
-          margin-left: 11rem;
-          margin-right: 11rem;
+          justify-items: center;
+*/
           position: relative;
           min-height: calc(100vh - 147px -32px - 50px);
 
@@ -80,8 +97,10 @@ html * {
   /** Atricle Content  **/
   
   #maincontent article {
+      
       border-style: solid;
       border-color: #DDDDDD;
+      margin-bottom: 2px;
   
      
   
